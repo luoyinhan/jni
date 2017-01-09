@@ -2,7 +2,6 @@ package com.xiaoluo.ndktest;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.widget.TextView;
 
 import com.xiaoluo.ndktest.testjni.MyJNI;
@@ -19,6 +18,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView txt_jni = (TextView) findViewById(R.id.txt_jni);
-        txt_jni.setText(MyJNI.sayhello());
+        txt_jni.setText(MyJNI.sayhello());//调用jni 方法
     }
 }

@@ -17,11 +17,11 @@ extern "C" {
  * Method:    sayhello
  * Signature: ()Ljava/lang/String;
  */
-JNIEXPORT jstringJNICALL Java_com_xiaoluo_ndktest_testjni_MyJNI_sayhello
-        (JNIEnv *env, jclass obj){
-    //返回一句话
-    return (*env)->NewStringUTF(env, "JNI I am xiaoluo");
-}
+JNIEXPORT jstring JNICALL Java_com_xiaoluo_ndktest_testjni_MyJNI_sayhello
+  (JNIEnv * env, jclass obj){
+        //返回一句话
+        return (*env)->NewStringUTF(env,"JNI I am xiaoluo");
+  }
 
 #ifdef __cplusplus
 }
